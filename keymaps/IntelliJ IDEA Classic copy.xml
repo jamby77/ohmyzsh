@@ -1,0 +1,6 @@
+<keymap version="1" name="IntelliJ IDEA Classic copy" parent="$default">
+  <action id="Console.TableResult.SetDefault" />
+  <action id="Diff.ShowDiff">
+    <keyboard-shortcut first-keystroke="ctrl alt d" />
+  </action>
+</keymap>
