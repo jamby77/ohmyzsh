@@ -2,6 +2,9 @@
   <action id="ActivateDatabaseToolWindow">
     <keyboard-shortcut first-keystroke="alt 8" />
   </action>
+  <action id="CloseAllEditorsButActive">
+    <keyboard-shortcut first-keystroke="ctrl alt w" />
+  </action>
   <action id="Console.TableResult.SetDefault" />
   <action id="Diff.ShowDiff">
     <keyboard-shortcut first-keystroke="ctrl alt d" />
