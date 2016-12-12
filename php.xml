@@ -2,13 +2,13 @@
   <component name="PhpAutoImport" auto_import_file_scope="true" />
   <component name="PhpInterpreters">
     <interpreters>
-      <interpreter home="/usr/bin/php" id="0780b0a9-e7eb-4bc0-bfb7-8460420ca476" name="PHP 5.6" debugger_id="php.debugger.XDebug" />
+      <interpreter home="/usr/bin/php" id="0780b0a9-e7eb-4bc0-bfb7-8460420ca476" name="PHP 5.6" debugger_id="php.debugger.XDebug" debugger_extension="/usr/lib64/php/modules/xdebug.so" />
     </interpreters>
   </component>
   <component name="PhpInterpretersPhpInfoCache">
     <phpInfoCache>
       <interpreter name="PHP 5.6">
-        <phpinfo binary_type="PHP" php_cgi="/usr/bin/php-cgi" php_cli="/usr/bin/php" path_separator=":" version="5.6.23">
+        <phpinfo binary_type="PHP" php_cgi="/usr/bin/php-cgi" php_cli="/usr/bin/php" path_separator=":" version="5.6.23" warning="Cannot load Xdebug - extension already loaded&#10;">
           <additional_php_ini>/etc/php.d/15-xdebug.ini, /etc/php.d/20-bz2.ini, /etc/php.d/20-calendar.ini, /etc/php.d/20-ctype.ini, /etc/php.d/20-curl.ini, /etc/php.d/20-dom.ini, /etc/php.d/20-exif.ini, /etc/php.d/20-fileinfo.ini, /etc/php.d/20-ftp.ini, /etc/php.d/20-gettext.ini, /etc/php.d/20-iconv.ini, /etc/php.d/20-mbstring.ini, /etc/php.d/20-mcrypt.ini, /etc/php.d/20-mysqlnd.ini, /etc/php.d/20-pdo.ini, /etc/php.d/20-phar.ini, /etc/php.d/20-posix.ini, /etc/php.d/20-shmop.ini, /etc/php.d/20-simplexml.ini, /etc/php.d/20-soap.ini, /etc/php.d/20-sockets.ini, /etc/php.d/20-sqlite3.ini, /etc/php.d/20-sysvmsg.ini, /etc/php.d/20-sysvsem.ini, /etc/php.d/20-sysvshm.ini, /etc/php.d/20-tidy.ini, /etc/php.d/20-tokenizer.ini, /etc/php.d/20-xml.ini, /etc/php.d/20-xmlwriter.ini, /etc/php.d/20-xsl.ini, /etc/php.d/30-mysql.ini, /etc/php.d/30-mysqli.ini, /etc/php.d/30-pdo_mysql.ini, /etc/php.d/30-pdo_sqlite.ini, /etc/php.d/30-wddx.ini, /etc/php.d/30-xmlreader.ini, /etc/php.d/40-igbinary.ini, /etc/php.d/40-json.ini, /etc/php.d/40-msgpack.ini, /etc/php.d/50-memcached.ini, /etc/php.d/50-mongo.ini</additional_php_ini>
           <configuration_file>/etc/php.ini</configuration_file>
           <configuration_options>
@@ -282,7 +282,7 @@
             <configuration_option name="xdebug.profiler_output_dir" value="/tmp" />
             <configuration_option name="xdebug.profiler_output_name" value="cachegrind.out.%p" />
             <configuration_option name="xdebug.remote_autostart" value="0" />
-            <configuration_option name="xdebug.remote_connect_back" value="0" />
+            <configuration_option name="xdebug.remote_connect_back" value="1" />
             <configuration_option name="xdebug.remote_cookie_expire_time" value="3600" />
             <configuration_option name="xdebug.remote_enable" value="0" />
             <configuration_option name="xdebug.remote_handler" value="dbgp" />
