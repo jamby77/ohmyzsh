@@ -5,4 +5,10 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="ttest" value="$this-&gt;tester-&gt;$END$" description="tester shortcut" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Statement" value="true" />
+      <option name="PHP Expression" value="true" />
+    </context>
+  </template>
 </templateSet>
