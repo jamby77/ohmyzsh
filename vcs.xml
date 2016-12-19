@@ -10,6 +10,10 @@
           <option name="url" value="http://git.sf.vayant.com" />
           <option name="userName" value="pdzhambazov" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@git.sf.vayant.com:vayant/web-tools.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Projects" />
