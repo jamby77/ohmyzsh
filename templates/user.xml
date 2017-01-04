@@ -11,4 +11,12 @@
       <option name="PHP Expression" value="true" />
     </context>
   </template>
+  <template name="ifn" value="if (null === $VAR$) {&#10;&#9;$CODE$;&#10;}&#10;$END$" description="if null" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CODE" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Statement" value="true" />
+      <option name="PHP Expression" value="true" />
+    </context>
+  </template>
 </templateSet>
