@@ -27,4 +27,10 @@
       <option name="PHP Expression" value="true" />
     </context>
   </template>
+  <template name="th" value="$this-&gt;$code$ $END$" description="this with arrow" toReformat="true" toShortenFQNames="true">
+    <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Expression" value="true" />
+    </context>
+  </template>
 </templateSet>
