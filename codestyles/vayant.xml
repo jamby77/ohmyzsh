@@ -59,4 +59,9 @@
       </groups>
     </arrangement>
   </codeStyleSettings>
+  <codeStyleSettings language="SCSS">
+    <indentOptions>
+      <option name="USE_TAB_CHARACTER" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
 </code_scheme>
