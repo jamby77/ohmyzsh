@@ -1,5 +1,5 @@
 <templateSet group="user">
-  <template name="clog" value="console.log($VAR$);&#10;$END$" description="console log" toReformat="true" toShortenFQNames="true">
+  <template name="clog" value="console.log($VAR$);$END$" description="console log" toReformat="true" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -31,6 +31,11 @@
     <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP Expression" value="true" />
+    </context>
+  </template>
+  <template name="_t" value="&lt;%= t('$SELECTION$') %&gt;" description="translate string" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
     </context>
   </template>
 </templateSet>
