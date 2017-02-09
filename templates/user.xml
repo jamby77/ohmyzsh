@@ -43,6 +43,7 @@
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JSX_HTML" value="false" />
       <option name="JS_EXPRESSION" value="false" />
+      <option name="PHP" value="true" />
     </context>
   </template>
   <template name="def" value="define(function (require) {&#10;    $END$&#10;});" description="requirejs define expression" toReformat="true" toShortenFQNames="true">
