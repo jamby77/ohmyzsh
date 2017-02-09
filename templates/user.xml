@@ -7,24 +7,24 @@
   </template>
   <template name="ttest" value="$this-&gt;tester-&gt;$END$" description="tester shortcut" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="PHP Statement" value="true" />
       <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
     </context>
   </template>
   <template name="ifn" value="if (null === $VAR$) {&#10;&#9;$CODE$;&#10;}&#10;$END$" description="if null" toReformat="true" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="CODE" expression="time()" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP Statement" value="true" />
       <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
     </context>
   </template>
   <template name="if" value="if($CONDITION$) {&#10;    $CONDITION_CODE$&#10;}&#10;$END$" description="if statement" toReformat="true" toShortenFQNames="true">
     <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="CONDITION_CODE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP Statement" value="true" />
       <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
     </context>
   </template>
   <template name="th" value="$this-&gt;$code$ $END$" description="this with arrow" toReformat="true" toShortenFQNames="true">
@@ -40,9 +40,9 @@
   </template>
   <template name="copy" value="/*&#10;* Copyright 2015-2016, Vayant Travel Technologies, All rights reserved&#10;*&#10;* This software is copyrighted by and is the sole property of VAYANT Travel Technologies Inc.,&#10;* its successors and assigns. Any un-authorized use, duplication, transmission, distribution,&#10;* or disclosure of this software, in whole or in part,&#10;* is expressly forbidden without prior written consent and may constitute a criminal offense.&#10;*&#10;* This Copyright notice may not be removed or modified.&#10;*/" description="copyright notice" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="JS_EXPRESSION" value="false" />
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
     </context>
   </template>
   <template name="def" value="define(function (require) {&#10;    $END$&#10;});" description="requirejs define expression" toReformat="true" toShortenFQNames="true">
