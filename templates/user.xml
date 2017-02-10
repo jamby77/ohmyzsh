@@ -64,4 +64,9 @@
       <option name="JS_EXPRESSION" value="true" />
     </context>
   </template>
+  <template name="tt" value="App.polyglot.t($SELECTION$)" description="App.polyglot in js expression" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
 </templateSet>
