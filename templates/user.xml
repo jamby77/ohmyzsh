@@ -69,4 +69,11 @@
       <option name="JS_EXPRESSION" value="true" />
     </context>
   </template>
+  <template name="%%" value="&lt;%$EDIT$%&gt;$END$" description="underscore script tags" toReformat="true" toShortenFQNames="true">
+    <variable name="EDIT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="HTML_TEXT" value="false" />
+    </context>
+  </template>
 </templateSet>
