@@ -73,7 +73,6 @@
     <variable name="EDIT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
-      <option name="HTML_TEXT" value="false" />
     </context>
   </template>
 </templateSet>
