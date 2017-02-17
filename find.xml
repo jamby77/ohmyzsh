@@ -1,9 +1,7 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="File '[web-admin-fresh] - .../lib/lang/en/sync.php'" />
-    <option name="defaultScopeName" value="File '[web-admin-fresh] - .../lib/lang/en/sync.php'" />
-    <option name="localWholeWordsOnly" value="true" />
-    <option name="LOCAL_WHOLE_WORDS_ONLY" value="true" />
-    <option name="SEARCH_SCOPE" value="File '[web-admin-fresh] - .../lib/lang/en/sync.php'" />
+    <option name="customScope" value="File '[bundles] - .../lib/lang/en/merchandising.php'" />
+    <option name="defaultScopeName" value="File '[bundles] - .../lib/lang/en/merchandising.php'" />
+    <option name="SEARCH_SCOPE" value="File '[bundles] - .../lib/lang/en/merchandising.php'" />
   </component>
 </application>
