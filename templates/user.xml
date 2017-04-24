@@ -33,7 +33,8 @@
       <option name="PHP Expression" value="true" />
     </context>
   </template>
-  <template name="_t" value="&lt;%= t('$SELECTION$') %&gt;" description="translate string" toReformat="true" toShortenFQNames="true">
+  <template name="_t" value="&lt;%= t('$SELECTION$$ADD$') %&gt;$END$" description="translate string" toReformat="true" toShortenFQNames="true">
+    <variable name="ADD" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
