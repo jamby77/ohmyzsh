@@ -77,4 +77,14 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="tplreq" value="$TPL$Tpl = require('text!$PATH$')$END$" description="require template file" toReformat="true" toShortenFQNames="true">
+    <variable name="TPL" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="PATH" expression="" defaultValue="&quot;../templates&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
 </templateSet>
