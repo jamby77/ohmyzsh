@@ -5,10 +5,22 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="wedisagree"
+# ZSH_THEME="wedisagree"
+#Shorten directory shown
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+POWERLEVEL9K_SHORTEN_DELIMITER=""
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context battery dir_writable dir vcs newline)
+#Set default user to avoid showing 'user' on every line
+DEFAULT_USER="pp"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -45,13 +57,22 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions battery brew catimg chucknorris encode64 git git-extras laravel5 node n98-magerun osx sublime systemadmin urltools wd zsh_reload)
+plugins=(
+  zsh-autosuggestions
+  battery brew catimg
+  encode64 git git-extras
+  laravel5 node osx
+  sublime systemadmin
+  urltools wd zsh_reload
+  golang zsh-syntax-highlighting
+  vscode
+)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:$PATH:$HOME/.composer/vendor/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -60,10 +81,10 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
+# if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='subl'
+  export EDITOR='code'
 fi
 
 # Compilation flags
@@ -79,14 +100,17 @@ export SSH_KEY_PATH="~/.ssh/dsa_id"
 #
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="st ~/.oh-my-zsh"
+# alias ohmyzsh="st ~/.oh-my-zsh"
 alias sites="cd /Users/pp/Sites/"
-
-# if [ -f /Vloumes/Macintosh\ HD/Sites/n98-magerun/autocompletion/bash/bash_complete ]; then
-#     . /Volumes/Macintosh\ HD/Sites/n98-magerun/autocompletion/bash/bash_complete
-# fi
-
-export ANDROID_HOME="/Volumes/Macintosh HD/android-sdk-macosx"
-export ANDROID_HVPROTO=ddm
+alias ll="exa -lbhHg@"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export GOPATH=$HOME/GoglandProjects
+export GOBIN=$HOME/GoglandProjects/bin
+export GOROOT=/usr/local/opt/go/libexec
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/pp/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
