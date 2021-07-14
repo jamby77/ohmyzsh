@@ -11,6 +11,7 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context battery dir_writable dir vcs newline)
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 #Set default user to avoid showing 'user' on every line
 DEFAULT_USER="pp"
 ZSH_THEME="powerlevel9k/powerlevel9k"
@@ -23,7 +24,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="false"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -65,7 +66,7 @@ plugins=(
   sublime systemadmin
   urltools wd zsh_reload
   golang zsh-syntax-highlighting
-  vscode
+  vscode emoji emoji_clock
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -81,7 +82,7 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
+if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
   export EDITOR='code'
@@ -102,7 +103,9 @@ export SSH_KEY_PATH="~/.ssh/dsa_id"
 alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="st ~/.oh-my-zsh"
 alias sites="cd /Users/pp/Sites/"
-alias ll="exa -lbhHg@"
+alias ll="exa --long --classify --grid --binary --header --git --group-directories-first"
+alias la="exa --long --classify --grid --binary --header --git --group-directories-first --all"
+alias bu="brew update && brew upgrade --cask --greedy && brew upgrade && brew cleanup --prune 30"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
@@ -114,3 +117,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/pp/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
